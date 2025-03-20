@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Mini Doctor",
+  "version": "1.0",
+  "description": "Get medicine details instantly",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://api.fda.gov/*",
+    "https://rxnav.nlm.nih.gov/*",
+    "https://api.openai.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
